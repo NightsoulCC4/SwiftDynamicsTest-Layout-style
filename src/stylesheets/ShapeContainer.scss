@@ -1,0 +1,22 @@
+@import "./variables";
+.shape-container {
+    .row {
+        gap: 1rem;
+        margin-bottom: 1rem;
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            height: 10rem;
+            &:hover {
+                background-color: $primaryColor !important;
+                animation: 0s !important;
+            }
+            &:active {
+                background-color: $secondaryColor !important;
+                animation: 0s !important;
+            }
+        }
+    }
+}

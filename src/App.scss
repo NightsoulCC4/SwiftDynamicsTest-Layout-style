@@ -1,0 +1,107 @@
+@import "./stylesheets/variables.scss";
+
+.App {
+    .App-header {
+        background-image: linear-gradient(to right, $secondaryColor, $primaryColor);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-size: calc(10px + 2vmin);
+        .body {
+            margin: 0 15rem;
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+                .button-side {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20rem;
+                    height: 10rem;
+                    .triangle-left {
+                        width: 0;
+                        height: 0;
+                        border-top: 3rem solid transparent;
+                        border-right: 7rem solid #555;
+                        border-bottom: 3rem solid transparent;
+                    }
+
+                    .triangle-right {
+                        width: 0;
+                        height: 0;
+                        border-top: 3rem solid transparent;
+                        border-left: 7rem solid #555;
+                        border-bottom: 3rem solid transparent;
+                    }
+                }
+                .button-middle {
+                    width: 40rem;
+                    height: 10rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10rem;
+                    .triangle-up-down {
+                        width: 0;
+                        height: 0;
+                        border-left: 3rem solid transparent;
+                        border-right: 3rem solid transparent;
+                    }
+                    .triangle-up {
+                        border-bottom: 6rem solid #555;
+                    }
+                    .triangle-down {
+                        border-top: 6rem solid #555;
+                    }
+                }
+                .button {
+                    position: relative;
+                    .name-button {
+                        position: absolute;
+                        background-color: $secondaryColor;
+                        width: 7rem;
+                        height: 2rem;
+                        border-radius: 1.5rem;
+                        bottom: -10%;
+                        p {
+                            margin: 5px;
+                            text-align: center;
+                            color: white;
+                        }
+                    }
+                    &:hover {
+                        background-color: $primaryColor !important;
+                        animation: 0s !important;
+                    }
+                    &:active {
+                        background-color: $secondaryColor !important;
+                        animation: 0s !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shape-container {
+    .row {
+        gap: 1rem;
+        margin-bottom: 1rem;
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            height: 10rem;
+            &:hover {
+                background-color: $primaryColor !important;
+                animation: 0s !important;
+            }
+            &:active {
+                background-color: $secondaryColor !important;
+                animation: 0s !important;
+            }
+        }
+    }
+}

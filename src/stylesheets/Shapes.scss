@@ -1,0 +1,52 @@
+@import "../stylesheets/variables";
+.square {
+    height: 7rem;
+    width: 7rem;
+    background-color: #555;
+}
+.circle {
+    height: 7rem;
+    width: 7rem;
+    background-color: #555;
+    border-radius: 50%;
+}
+.oval {
+    height: 7rem;
+    width: 12rem;
+    background-color: #555;
+    border-radius: 50%;
+}
+.trapezoid {
+    border-bottom: 7rem solid #555;
+    border-left: 3.5rem solid transparent;
+    border-right: 3.5rem solid transparent;
+    height: 0;
+    width: 7rem;
+}
+.rectangle {
+    height: 7rem;
+    width: 12rem;
+    background-color: #555;
+}
+.parallelogram {
+    width: 12rem;
+    height: 7rem;
+    transform: skew(20deg);
+    background: #555;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 10rem;
+    &:hover {
+        background-color: $primaryColor !important;
+        animation: 0s !important;
+    }
+    &:active {
+        background-color: $secondaryColor !important;
+        animation: 0s !important;
+    }
+}

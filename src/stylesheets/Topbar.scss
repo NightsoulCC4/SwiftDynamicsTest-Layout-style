@@ -1,0 +1,12 @@
+.topbar {
+    display: flex;
+    position: relative;
+    .topbar-topic {
+        margin-left: 2rem;
+    }
+    .change-language {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+    }
+}
